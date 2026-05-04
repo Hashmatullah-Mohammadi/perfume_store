@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="فروشگاه آنلاین عطر لوکس LUXE PERFUME - بهترین عطرهای مردانه، زنانه و یونیسکس"
+    />
+    <meta name="author" content="LUXE PERFUME" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <title>جزئیات محصول| LUXE PERFUME</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- ========== HEADER START ========== -->
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="logo">
+          <div class="logo__icon">🪄</div>
+          <div class="logo__text">
+            <span class="logo__brand">LUXE</span>
+            <span class="logo__sub">PERFUME</span>
+          </div>
+        </a>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">خانه</a>
+                </li>
+                <li class="nav__item">
+                    <a href="products.html" class="nav__link">محصولات</a>
+                </li>
+                <li class="nav__item">
+                    <a href="product-detail.html" class="nav__link">✨ محصول ویژه</a>
+                </li>
+                <li class="nav__item">
+                    <a href="aboutus.html" class="nav__link">درباره ما</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">تماس با ما</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__actions">
+          <button class="header__btn" id="searchToggle">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </svg>
+          </button>
+          <a href="./cart.html" class="header__btn cart-btn">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"
+              ></path>
+              <path d="M3 6h18"></path>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge">0</span>
+           </a>
+          <a  href="./login.html" class="header__btn" id="userBtn">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+        </a>
+          <button class="hamburger" id="hamburgerBtn">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="search-bar" id="searchBar">
+        <div class="search-bar__container">
+          <input
+            type="text"
+            placeholder="جستجوی عطر، برند، نت بویایی..."
+            id="searchInput"
+          />
+          <button id="searchClose">✕</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav__header">
+        <div class="logo__text">
+          <span class="logo__brand">LUXE</span>
+          <span class="logo__sub">PERFUME</span>
+        </div>
+        <button class="mobile-nav__close" id="mobileNavClose">✕</button>
+      </div>
+      <ul class="mobile-nav__list">
+          <li><a href="index.html">خانه</a></li>
+          <li><a href="products.html">محصولات</a></li>
+          <li><a href="product-detail.html">✨ محصول ویژه</a></li>
+          <li><a href="aboutus.html">درباره ما</a></li>
+          <li><a href="contact.html">تماس با ما</a></li>
+      </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <!-- ========== HEADER END ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+     <main>
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="product-detail__container">
+            <div class="product-detail__grid">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="gallery-main">
+                        <img src="https://boodise.shop/wp-content/uploads/2024/03/what-unisex-perfume2.jpg" alt="Bleu de Chanel" id="mainImage">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <div class="thumb active" data-img="https://boodise.shop/wp-content/uploads/2024/03/what-unisex-perfume2.jpg">
+                            <img src="https://boodise.shop/wp-content/uploads/2024/03/what-unisex-perfume2.jpg" alt="Thumb 1">
+                        </div>
+                        <div class="thumb" data-img="https://boodise.shop/wp-content/uploads/2024/03/what-unisex-perfume2.jpg">
+                            <img src="https://boodise.shop/wp-content/uploads/2024/03/what-unisex-perfume2.jpg" alt="Thumb 2">
+                        </div>
+                        <div class="thumb" data-img="https://boodise.shop/wp-content/uploads/2024/03/what-unisex-perfume2.jpg">
+                            <img src="https://boodise.shop/wp-content/uploads/2024/03/what-unisex-perfume2.jpg" alt="Thumb 3">
+                        </div>
+                        <div class="thumb" data-img="https://boodise.shop/wp-content/uploads/2024/03/what-unisex-perfume2.jpg">
+                            <img src="https://boodise.shop/wp-content/uploads/2024/03/what-unisex-perfume2.jpg" alt="Thumb 4">
+                        </div>
+                        <div class="thumb" data-img="https://boodise.shop/wp-content/uploads/2024/03/what-unisex-perfume2.jpg">
+                            <img src="https://boodise.shop/wp-content/uploads/2024/03/what-unisex-perfume2.jpg" alt="Thumb 4">
+                        </div>
+                        <div class="thumb" data-img="https://boodise.shop/wp-content/uploads/2024/03/what-unisex-perfume2.jpg">
+                            <img src="https://boodise.shop/wp-content/uploads/2024/03/what-unisex-perfume2.jpg" alt="Thumb 4">
+                        </div>                       
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-badge">پرفروش‌ترین</div>
+                    <h1 class="product-title">BLEU DE CHANEL</h1>
+                    <div class="product-brand-detail">
+                        <span>برند:</span>
+                        <strong>CHANEL</strong>
+                    </div>
+                    
+                    <div class="product-rating-detail">
+                        <div class="stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <span class="reviews">(۲۴۳ نظر از مشتریان)</span>
+                    </div>
+                    
+                    <div class="product-price-detail">
+                        <span class="current">۲,۸۹۹,۰۰۰</span>
+                        <span class="unit">تومان</span>
+                        <span class="old">۳,۴۹۹,۰۰۰</span>
+                        <span class="discount">-۱۷٪</span>
+                    </div>
+                    
+                    <div class="product-short-desc">
+                        <p>عطر ادکلن بلو دو شانل، یک عطر مردانه چوبی با رایحه‌ای ماندگار و خاص. ترکیبی از نت‌های مرکباتی و چوبی.</p>
+                    </div>
+                    
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>حجم:</label>
+                            <div class="size-buttons">
+                                <button class="size-btn active">۵۰ ml</button>
+                                <button class="size-btn">۱۰۰ ml</button>
+                                <button class="size-btn">۱۵۰ ml</button>
+                            </div>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label>تعداد:</label>
+                            <div class="quantity-selector">
+                                <button class="qty-btn" id="qtyMinus">-</button>
+                                <input type="number" id="productQty" value="1" min="1" max="10">
+                                <button class="qty-btn" id="qtyPlus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="add-to-cart-detail" id="addToCartDetail">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                                <path d="M3 6h18"/>
+                                <path d="M16 10a4 4 0 0 1-8 0"/>
+                            </svg>
+                            افزودن به سبد خرید
+                        </button>
+                        <button class="wishlist-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            <span>ارسال سریع ۲۴ ساعته</span>
+                        </div>
+                        <div class="meta-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 12V8H4v12h16"/>
+                                <path d="M12 2v20"/>
+                            </svg>
+                            <span>گارانتی اصالت کالا</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Description Tabs -->
+    <section class="product-tabs">
+        <div class="product-tabs__container">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="desc">توضیحات</button>
+                <button class="tab-btn" data-tab="notes">نت‌های بویایی</button>
+                <button class="tab-btn" data-tab="reviews">نظرات مشتریان</button>
+            </div>
+            
+            <div class="tabs-content">
+                <div class="tab-pane active" id="tab-desc">
+                    <h3>معرفی محصول</h3>
+                    <p>عطر ادکلن بلو دو شانل (Bleu de Chanel) یکی از محبوب‌ترین عطرهای مردانه جهان است. این عطر با ترکیب منحصربفرد نت‌های مرکباتی، چوبی و عنبری، رایحه‌ای ماندگار و خاص را ایجاد کرده است.</p>
+                    <p>مناسب برای استفاده روزانه و مهمانی‌های خاص. ماندگاری بالایی دارد و در تمام فصول سال قابل استفاده است.</p>
+                </div>
+                
+                <div class="tab-pane" id="tab-notes">
+                    <h3>نت‌های بویایی</h3>
+                    <div class="notes-list">
+                        <div class="note-group">
+                            <h4>نت ابتدایی (Top Notes)</h4>
+                            <div class="note-chips">
+                                <span>گریپ‌فروت</span>
+                                <span>لیمو</span>
+                                <span>نعناع</span>
+                            </div>
+                        </div>
+                        <div class="note-group">
+                            <h4>نت میانی (Heart Notes)</h4>
+                            <div class="note-chips">
+                                <span>زنجبیل</span>
+                                <span>یاسمن</span>
+                                <span>دارچین</span>
+                            </div>
+                        </div>
+                        <div class="note-group">
+                            <h4>نت پایه (Base Notes)</h4>
+                            <div class="note-chips">
+                                <span>چوب سدر</span>
+                                <span>عنبر</span>
+                                <span>چوب صندل</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="tab-reviews">
+                    <div class="reviews-summary">
+                        <div class="average-rating">
+                            <span class="big-rating">۴.۸</span>
+                            <div class="stars">★★★★★</div>
+                            <span>از ۲۴۳ نظر</span>
+                        </div>
+                        <button class="write-review">ثبت نظر جدید</button>
+                    </div>
+                    
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="reviewer">
+                                <span class="initial">س</span>
+                                <div>
+                                    <h4>سارا احمدی</h4>
+                                    <div class="review-rating">★★★★★</div>
+                                </div>
+                            </div>
+                            <p class="review-text">عطر فوق‌العاده‌ای بود. ماندگاری و پخش بوی بسیار خوبی داره. صد درصد راضی هستم.</p>
+                            <span class="review-date">۲۵ بهمن ۱۴۰۳</span>
+                        </div>
+                        <div class="review-item">
+                            <div class="reviewer">
+                                <span class="initial">م</span>
+                                <div>
+                                    <h4>محمد رضایی</h4>
+                                    <div class="review-rating">★★★★☆</div>
+                                </div>
+                            </div>
+                            <p class="review-text">عطر خوبیه ولی قیمتش یه کمی بالاست. اصل و کاملاً استاندارد بود.</p>
+                            <span class="review-date">۱۸ بهمن ۱۴۰۳</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="related-products__container">
+            <div class="related-header">
+                <h2>محصولات <span>مرتبط</span></h2>
+                <p>شما ممکن است به این عطرها هم علاقه داشته باشید</p>
+            </div>
+            
+            <div class="related-grid">
+                <div class="related-card">
+                    <div class="related-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2C6-onuLAG2gJpSNVFI0AAFsbZTUd5ycanQ&s" alt="Dior Sauvage">
+                    </div>
+                    <h3>SAUVAGE</h3>
+                    <p class="brand">DIOR</p>
+                    <div class="price">۳,۵۰۰,۰۰۰</div>
+                    <a href="product-detail.html" class="view-btn">مشاهده</a>
+                </div>
+                <div class="related-card">
+                    <div class="related-image">
+                        <img src="https://arma-perfume.ir/shop-resources/lGu2JgQXm8/product-images/1769373906_668736617.jpg" alt="Tom Ford Oud Wood">
+                    </div>
+                    <h3>OUD WOOD</h3>
+                    <p class="brand">TOM FORD</p>
+                    <div class="price">۴,۵۰۰,۰۰۰</div>
+                    <a href="product-detail.html" class="view-btn">مشاهده</a>
+                </div>
+                <div class="related-card">
+                    <div class="related-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIx80C7ZFKxQQIQLVoM_rdgzOKQhVma9Qvg&s" alt="Acqua di Gio">
+                    </div>
+                    <h3>ACQUA DI GIO</h3>
+                    <p class="brand">ARMANI</p>
+                    <div class="price">۲,۲۰۰,۰۰۰</div>
+                    <a href="product-detail.html" class="view-btn">مشاهده</a>
+                </div>
+            </div>
+        </div>
+    </section>
+     </main>
+    <!-- ========== MAIN CONTENT ========== -->
+    
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer class="footer">
+          <div class="footer__container">
+              <div class="footer__grid">
+                  <!-- About Column -->
+                  <div class="footer__col">
+                      <div class="footer__logo">
+                          <span class="logo-icon">🪄</span>
+                          <span class="logo-text">LUXE <span>PERFUME</span></span>
+                      </div>
+                      <p class="footer__about">
+                          ارائه‌دهنده لوکس‌ترین عطرهای اصل اروپایی با ضمانت اصالت و بهترین قیمت.
+                      </p>
+                      <div class="footer__social">
+                          <a href="#" class="social-link">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                              </svg>
+                          </a>
+                          <a href="#" class="social-link">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.3 9 4-1-2.7.7-5.6 3.3-6.3 2.6-.8 5.2.6 5.7 3.2.8-.2 1.6-.5 2.3-.9z"/>
+                              </svg>
+                          </a>
+                          <a href="#" class="social-link">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <rect x="2" y="2" width="20" height="20" rx="4"/>
+                                  <circle cx="12" cy="12" r="4"/>
+                                  <path d="M17.5 6.5v.01"/>
+                              </svg>
+                          </a>
+                          <a href="#" class="social-link">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                  <rect x="2" y="9" width="4" height="12"/>
+                                  <circle cx="4" cy="4" r="2"/>
+                              </svg>
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- Quick Links -->
+                  <div class="footer__col">
+                      <h4 class="footer__title">دسترسی سریع</h4>
+                      <ul class="footer__links">
+                          <li><a href="index.html">خانه</a></li>
+                          <li><a href="products.html">محصولات</a></li>
+                          <li><a href="aboutus.html">درباره ما</a></li>
+                          <li><a href="contact.html">تماس با ما</a></li>
+                          <li><a href="#">سوالات متداول</a></li>
+                      </ul>
+                  </div>
+
+                  <!-- Categories -->
+                  <div class="footer__col">
+                      <h4 class="footer__title">دسته‌بندی</h4>
+                      <ul class="footer__links">
+                          <li><a href="#">عطرهای مردانه</a></li>
+                          <li><a href="#">عطرهای زنانه</a></li>
+                          <li><a href="#">عطرهای یونیسکس</a></li>
+                          <li><a href="#">نسخه محدود</a></li>
+                          <li><a href="#">ست هدیه</a></li>
+                      </ul>
+                  </div>
+
+                  <!-- Contact -->
+                  <div class="footer__col">
+                      <h4 class="footer__title">تماس با ما</h4>
+                      <ul class="footer__contact">
+                          <li>
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                  <circle cx="12" cy="10" r="3"/>
+                              </svg>
+                              <span>کابل پل سرخ </span>
+                          </li>
+                          <li>
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                              </svg>
+                              <span dir="ltr">+93 78 807 7685</span>
+                          </li>
+                          <li>
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                  <polyline points="22,6 12,13 2,6"/>
+                              </svg>
+                              <span>info@tawanatechnology.com</span>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="footer__bottom">
+                  <p>© ۲۰۲۶ <strong>Tawana Technology</strong>. تمامی حقوق محفوظ است.</p>
+                  <p style="font-size: 11px; opacity: 0.6;">طراحی و توسعه توسط Tawana Technology</p>
+              </div>
+          </div>
+    </footer>
+ 
+
+
+    <script src="./js/header.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
+ 

@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="فروشگاه آنلاین عطر لوکس LUXE PERFUME - بهترین عطرهای مردانه، زنانه و یونیسکس"
+    />
+    <meta name="author" content="LUXE PERFUME" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <title>LUXE PERFUME | فروشگاه آنلاین عطر لوکس</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- ========== HEADER START ========== -->
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="logo">
+          <div class="logo__icon">🪄</div>
+          <div class="logo__text">
+            <span class="logo__brand">LUXE</span>
+            <span class="logo__sub">PERFUME</span>
+          </div>
+        </a>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">خانه</a>
+                </li>
+                <li class="nav__item">
+                    <a href="products.html" class="nav__link">محصولات</a>
+                </li>
+                <li class="nav__item">
+                    <a href="product-detail.html" class="nav__link">✨ محصول ویژه</a>
+                </li>
+                <li class="nav__item">
+                    <a href="aboutus.html" class="nav__link">درباره ما</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">تماس با ما</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__actions">
+          <button class="header__btn" id="searchToggle">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </svg>
+          </button>
+          <a href="./cart.html" class="header__btn cart-btn">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"
+              ></path>
+              <path d="M3 6h18"></path>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge">0</span>
+           </a>
+          <a  href="./login.html" class="header__btn" id="userBtn">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+        </a>
+          <button class="hamburger" id="hamburgerBtn">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="search-bar" id="searchBar">
+        <div class="search-bar__container">
+          <input
+            type="text"
+            placeholder="جستجوی عطر، برند، نت بویایی..."
+            id="searchInput"
+          />
+          <button id="searchClose">✕</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav__header">
+        <div class="logo__text">
+          <span class="logo__brand">LUXE</span>
+          <span class="logo__sub">PERFUME</span>
+        </div>
+        <button class="mobile-nav__close" id="mobileNavClose">✕</button>
+      </div>
+      <ul class="mobile-nav__list">
+          <li><a href="index.html">خانه</a></li>
+          <li><a href="products.html">محصولات</a></li>
+          <li><a href="product-detail.html">✨ محصول ویژه</a></li>
+          <li><a href="aboutus.html">درباره ما</a></li>
+          <li><a href="contact.html">تماس با ما</a></li>
+      </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <!-- ========== HEADER END ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+      <!-- Hero Section Advanced -->
+      <section class="hero-advanced">
+          <div class="hero-advanced__bg"></div>
+          
+          <div class="hero-advanced__container">
+              <div class="hero-advanced__content">
+                  <div class="hero-advanced__badge">
+                      <span class="badge-dot"></span>
+                      نسخه محدود ۲۰۲۶
+                  </div>
+                  
+                  <h1 class="hero-advanced__title">
+                      <span class="title-line">عطر لوکس</span>
+                      <span class="title-line title-gradient">تجربه‌ای بینظیر</span>
+                  </h1>
+                  
+                  <p class="hero-advanced__desc">
+                      با بهترین رایحه‌های فرانسوی، حس خاص بودن را به خود هدیه دهید.
+                      عطرهایی ماندگار با نت‌های بویایی استثنایی.
+                  </p>
+                  
+                  <div class="hero-advanced__buttons">
+                      <button class="btn-primary-advanced" id="shopNowBtn">
+                          خرید ویژه
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                              <path d="M5 12h14M12 5l7 7-7 7"/>
+                          </svg>
+                      </button>
+                      <button class="btn-outline-advanced" id="showReelBtn">
+                          تماشای ریل
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                              <circle cx="12" cy="12" r="10"/>
+                              <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/>
+                          </svg>
+                      </button>
+                  </div>
+                  
+                  <div class="hero-advanced__stats">
+                      <div class="stat">
+                          <span class="stat-number" data-target="50">0</span>
+                          <span class="stat-label">+ برند لوکس</span>
+                      </div>
+                      <div class="stat">
+                          <span class="stat-number" data-target="10000">0</span>
+                          <span class="stat-label">+ مشتری راضی</span>
+                      </div>
+                      <div class="stat">
+                          <span class="stat-number" data-target="100">0</span>
+                          <span class="stat-label">% اصالت کالا</span>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="hero-advanced__image">
+                  <div class="perfume-card">
+                      <div class="perfume-card__inner">
+                          <div class="perfume-bottle-3d">
+                              <div class="bottle-glow"></div>
+                              <div class="bottle-body">
+                                  <!-- <div class="bottle-liquid"></div>
+                                  <div class="bottle-cap"></div> -->
+                              </div>
+                          </div>
+                          <div class="perfume-tag">
+                              <span class="tag-price">۲,۸۹۹,۰۰۰</span>
+                              <span class="tag-unit">تومان</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="hero-advanced__scroll">
+              <span>اسکرول کنید</span>
+              <div class="scroll-mouse">
+                  <div class="scroll-wheel"></div>
+              </div>
+          </div>
+      </section>
+      
+      <!-- ========== BRANDS SECTION WITH SWIPER ========== -->
+      <section class="brands-swiper">
+          <div class="brands-swiper__container">
+              <div class="brands-swiper__header">
+                  <span class="brands-swiper__tag">◈ LUXURY HOUSES ◈</span>
+                  <h2 class="brands-swiper__title">برندهای <span>همکار ما</span></h2>
+                  <p class="brands-swiper__desc">همکاری مستقیم با بزرگترین خانه‌های مد و عطر جهان</p>
+              </div>
+
+              <!-- Swiper -->
+              <div class="swiper brandSwiper">
+                  <div class="swiper-wrapper">
+                      <!-- Slide 1 -->
+                      <div class="swiper-slide">
+                          <div class="brand-swiper-card">
+                              <div class="brand-swiper-card__icon">C</div>
+                              <h3>CHANEL</h3>
+                              <p>Est. 1910</p>
+                              <div class="brand-swiper-card__glow"></div>
+                          </div>
+                      </div>
+                      <!-- Slide 2 -->
+                      <div class="swiper-slide">
+                          <div class="brand-swiper-card">
+                              <div class="brand-swiper-card__icon">D</div>
+                              <h3>DIOR</h3>
+                              <p>Est. 1946</p>
+                              <div class="brand-swiper-card__glow"></div>
+                          </div>
+                      </div>
+                      <!-- Slide 3 -->
+                      <div class="swiper-slide">
+                          <div class="brand-swiper-card">
+                              <div class="brand-swiper-card__icon">G</div>
+                              <h3>GUCCI</h3>
+                              <p>Est. 1921</p>
+                              <div class="brand-swiper-card__glow"></div>
+                          </div>
+                      </div>
+                      <!-- Slide 4 -->
+                      <div class="swiper-slide">
+                          <div class="brand-swiper-card">
+                              <div class="brand-swiper-card__icon">V</div>
+                              <h3>VERSACE</h3>
+                              <p>Est. 1978</p>
+                              <div class="brand-swiper-card__glow"></div>
+                          </div>
+                      </div>
+                      <!-- Slide 5 -->
+                      <div class="swiper-slide">
+                          <div class="brand-swiper-card">
+                              <div class="brand-swiper-card__icon">T</div>
+                              <h3>TOM FORD</h3>
+                              <p>Est. 2005</p>
+                              <div class="brand-swiper-card__glow"></div>
+                          </div>
+                      </div>
+                      <!-- Slide 6 -->
+                      <div class="swiper-slide">
+                          <div class="brand-swiper-card">
+                              <div class="brand-swiper-card__icon">A</div>
+                              <h3>ARMANI</h3>
+                              <p>Est. 1975</p>
+                              <div class="brand-swiper-card__glow"></div>
+                          </div>
+                      </div>
+                      <!-- Slide 7 -->
+                      <div class="swiper-slide">
+                          <div class="brand-swiper-card">
+                              <div class="brand-swiper-card__icon">B</div>
+                              <h3>BVLGARI</h3>
+                              <p>Est. 1884</p>
+                              <div class="brand-swiper-card__glow"></div>
+                          </div>
+                      </div>
+                      <!-- Slide 8 -->
+                      <div class="swiper-slide">
+                          <div class="brand-swiper-card">
+                              <div class="brand-swiper-card__icon">H</div>
+                              <h3>HERMÈS</h3>
+                              <p>Est. 1837</p>
+                              <div class="brand-swiper-card__glow"></div>
+                          </div>
+                      </div>
+                      <!-- Slide 9 -->
+                      <div class="swiper-slide">
+                          <div class="brand-swiper-card">
+                              <div class="brand-swiper-card__icon">P</div>
+                              <h3>PRADA</h3>
+                              <p>Est. 1913</p>
+                              <div class="brand-swiper-card__glow"></div>
+                          </div>
+                      </div>
+                      <!-- Slide 10 -->
+                      <div class="swiper-slide">
+                          <div class="brand-swiper-card">
+                              <div class="brand-swiper-card__icon">Y</div>
+                              <h3>YSL</h3>
+                              <p>Est. 1961</p>
+                              <div class="brand-swiper-card__glow"></div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Navigation Buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+              </div>
+              
+              <!-- Pagination Dots -->
+              <div class="swiper-pagination"></div>
+          </div>
+      </section>
+      <!-- ========== BRANDS SECTION WITH SWIPER ========== -->
+      
+      <!-- ========== CATEGORIES SECTION - LUXURY WITH IMAGES ========== -->
+      <section class="categories">
+          <div class="categories__container">
+              <div class="categories__header">
+                  <span class="categories__tag">CATEGORIES</span>
+                  <h2 class="categories__title">عطرهای <span>خاص</span> تو را می‌خواهند</h2>
+                  <p class="categories__desc">بر اساس رایحه و سبک، انتخاب کن</p>
+              </div>
+
+              <div class="categories__grid">
+                  <div class="category-card category-card--men">
+                      <div class="category-card__bg"></div>
+                      <div class="category-card__overlay"></div>
+                      <div class="category-card__content">
+                          <h3>مردانه</h3>
+                          <p>۱۲۸ محصول</p>
+                          <a href="products.html?cat=men" class="category-card__link">مشاهده مجموعه <span>→</span></a>
+                      </div>
+                  </div>
+
+                  <div class="category-card category-card--women">
+                      <div class="category-card__bg"></div>
+                      <div class="category-card__overlay"></div>
+                      <div class="category-card__content">
+                          <h3>زنانه</h3>
+                          <p>۱۵۶ محصول</p>
+                          <a href="products.html?cat=women" class="category-card__link">مشاهده مجموعه <span>→</span></a>
+                      </div>
+                  </div>
+
+                  <div class="category-card category-card--unisex">
+                      <div class="category-card__bg"></div>
+                      <div class="category-card__overlay"></div>
+                      <div class="category-card__content">
+                          <h3>یونیسکس</h3>
+                          <p>۸۹ محصول</p>
+                          <a href="products.html?cat=unisex" class="category-card__link">مشاهده مجموعه <span>→</span></a>
+                      </div>
+                  </div>
+
+                  <div class="category-card category-card--limited">
+                      <div class="category-card__bg"></div>
+                      <div class="category-card__overlay"></div>
+                      <div class="category-card__content">
+                          <h3>نسخه محدود</h3>
+                          <p>۲۴ محصول</p>
+                          <a href="products.html?cat=limited" class="category-card__link">مشاهده مجموعه <span>→</span></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- ========== CATEGORIES SECTION - LUXURY WITH IMAGES ========== -->
+
+      <!-- ========== BEST SELLERS SECTION ========== -->
+      <section class="bestsellers">
+          <div class="bestsellers__bg"></div>
+          <div class="bestsellers__container">
+              <div class="bestsellers__header">
+                  <span class="bestsellers__tag">✨ BEST SELLERS ✨</span>
+                  <h2 class="bestsellers__title">پرفروش‌ترین <span>عطرهای ماه</span></h2>
+                  <p class="bestsellers__desc">محبوب‌ترین انتخاب‌های مشتریان ما</p>
+              </div>
+
+              <div class="bestsellers__grid">
+                  <!-- Product 1 -->
+                  <div class="product-card">
+                      <div class="product-card__badge">پرفروش</div>
+                      <div class="product-card__image">
+                          <img src="https://elite-store.ir/wp-content/uploads/2021/08/%D8%B9%D8%B7%D8%B1-%D8%B9%D8%B1%D8%A8%DB%8C-%D8%A8%D8%A7-%D9%85%D8%A7%D9%86%D8%AF%DA%AF%D8%A7%D8%B1%DB%8C-%D8%A8%D8%A7%D9%84%D8%A7-1-600x350.webp" alt="عطر ادکلن مردانه">
+                          <div class="product-card__overlay"></div>
+                          <button class="product-card__quickview" onclick="window.addToCart()">
+                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                  <path d="M20 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Z"/>
+                                  <path d="M16 9a4 4 0 0 1-8 0"/>
+                              </svg>
+                          </button>
+                      </div>
+                      <div class="product-card__content">
+                          <div class="product-card__brand">CHANEL</div>
+                          <h3 class="product-card__title">BLEU DE CHANEL</h3>
+                          <div class="product-card__rating">
+                              <div class="stars">
+                                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                              </div>
+                              <span class="rating-count">(۲۴۳ نظر)</span>
+                          </div>
+                          <div class="product-card__price">
+                              <span class="price-current">۲,۸۹۹,۰۰۰</span>
+                              <span class="price-unit">تومان</span>
+                              <span class="price-old">۳,۴۹۹,۰۰۰</span>
+                          </div>
+                          <button class="product-card__btn" onclick="window.addToCart()">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                                  <path d="M3 6h18"/>
+                                  <path d="M16 10a4 4 0 0 1-8 0"/>
+                              </svg>
+                              افزودن به سبد
+                          </button>
+                      </div>
+                  </div>
+
+                  <!-- Product 2 -->
+                  <div class="product-card">
+                      <div class="product-card__badge product-card__badge--new">جدید</div>
+                      <div class="product-card__image">
+                          <img src="https://arma-perfume.ir/shop-resources/lGu2JgQXm8/product-images/1769373906_668736617.jpg" alt="عطر ادکلن زنانه">
+                          <div class="product-card__overlay"></div>
+                          <button class="product-card__quickview" onclick="window.addToCart()">
+                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                  <path d="M20 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Z"/>
+                                  <path d="M16 9a4 4 0 0 1-8 0"/>
+                              </svg>
+                          </button>
+                      </div>
+                      <div class="product-card__content">
+                          <div class="product-card__brand">DIOR</div>
+                          <h3 class="product-card__title">J'ADORE</h3>
+                          <div class="product-card__rating">
+                              <div class="stars">
+                                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                              </div>
+                              <span class="rating-count">(۱۸۷ نظر)</span>
+                          </div>
+                          <div class="product-card__price">
+                              <span class="price-current">۳,۲۰۰,۰۰۰</span>
+                              <span class="price-unit">تومان</span>
+                          </div>
+                          <button class="product-card__btn" onclick="window.addToCart()">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                                  <path d="M3 6h18"/>
+                                  <path d="M16 10a4 4 0 0 1-8 0"/>
+                              </svg>
+                              افزودن به سبد
+                          </button>
+                      </div>
+                  </div>
+
+                  <!-- Product 3 -->
+                  <div class="product-card">
+                      <div class="product-card__badge">پرفروش</div>
+                      <div class="product-card__image">
+                          <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=300&h=300&fit=crop" alt="عطر ادکلن مردانه">
+                          <div class="product-card__overlay"></div>
+                          <button class="product-card__quickview" onclick="window.addToCart()">
+                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                  <path d="M20 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Z"/>
+                                  <path d="M16 9a4 4 0 0 1-8 0"/>
+                              </svg>
+                          </button>
+                      </div>
+                      <div class="product-card__content">
+                          <div class="product-card__brand">TOM FORD</div>
+                          <h3 class="product-card__title">OUD WOOD</h3>
+                          <div class="product-card__rating">
+                              <div class="stars">
+                                  <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                              </div>
+                              <span class="rating-count">(۱۵۶ نظر)</span>
+                          </div>
+                          <div class="product-card__price">
+                              <span class="price-current">۴,۵۰۰,۰۰۰</span>
+                              <span class="price-unit">تومان</span>
+                              <span class="price-old">۵,۲۰۰,۰۰۰</span>
+                          </div>
+                          <button class="product-card__btn" onclick="window.addToCart()">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                                  <path d="M3 6h18"/>
+                                  <path d="M16 10a4 4 0 0 1-8 0"/>
+                              </svg>
+                              افزودن به سبد
+                          </button>
+                      </div>
+                  </div>
+
+                  <!-- Product 4 -->
+                  <div class="product-card">
+                      <div class="product-card__badge product-card__badge--limited">نسخه محدود</div>
+                      <div class="product-card__image">
+                          <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=300&h=300&fit=crop" alt="عطر ادکلن زنانه">
+                          <div class="product-card__overlay"></div>
+                          <button class="product-card__quickview" onclick="window.addToCart()">
+                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                  <path d="M20 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Z"/>
+                                  <path d="M16 9a4 4 0 0 1-8 0"/>
+                              </svg>
+                          </button>
+                      </div>
+                      <div class="product-card__content">
+                          <div class="product-card__brand">GUCCI</div>
+                          <h3 class="product-card__title">BLOOM</h3>
+                          <div class="product-card__rating">
+                              <div class="stars">
+                                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                              </div>
+                              <span class="rating-count">(۲۰۴ نظر)</span>
+                          </div>
+                          <div class="product-card__price">
+                              <span class="price-current">۲,۶۰۰,۰۰۰</span>
+                              <span class="price-unit">تومان</span>
+                          </div>
+                          <button class="product-card__btn" onclick="window.addToCart()">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                                  <path d="M3 6h18"/>
+                                  <path d="M16 10a4 4 0 0 1-8 0"/>
+                              </svg>
+                              افزودن به سبد
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- ========== SPECIAL OFFER SECTION ========== -->
+      <section class="special-offer">
+          <div class="special-offer__container">
+              <div class="special-offer__content">
+                  <span class="offer-tag">✨ تخفیف ویژه ✨</span>
+                  <h2 class="offer-title">عطر <span>رویایی</span> تو<br>با ۳۵٪ تخفیف</h2>
+                  <p class="offer-desc">فقط تا پایان این هفته | به همراه هدیه ویژه</p>
+                  
+                  <div class="countdown" id="countdown">
+                      <div class="countdown-item">
+                          <span class="countdown-number" id="days">00</span>
+                          <span class="countdown-label">روز</span>
+                      </div>
+                      <div class="countdown-item">
+                          <span class="countdown-number" id="hours">00</span>
+                          <span class="countdown-label">ساعت</span>
+                      </div>
+                      <div class="countdown-item">
+                          <span class="countdown-number" id="minutes">00</span>
+                          <span class="countdown-label">دقیقه</span>
+                      </div>
+                      <div class="countdown-item">
+                          <span class="countdown-number" id="seconds">00</span>
+                          <span class="countdown-label">ثانیه</span>
+                      </div>
+                  </div>
+                  
+                  <a href="products.html" class="offer-btn">
+                      خرید با تخفیف ویژه
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                  </a>
+              </div>
+              
+              <div class="special-offer__image">
+                  <div class="offer-perfume">
+                      <img src="https://images.unsplash.com/photo-1594035910382-f1c3216c3bca?w=400&h=500&fit=crop" alt="عطر ویژه">
+                      <div class="offer-discount">-۳۵%</div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- ========== TESTIMONIALS SECTION ========== -->
+      <section class="testimonials">
+          <div class="testimonials__container">
+              <div class="testimonials__header">
+                  <span class="testimonials__tag">✦ TESTIMONIALS ✦</span>
+                  <h2 class="testimonials__title">آنچه <span>مشتریان</span> ما می‌گویند</h2>
+                  <p class="testimonials__desc">بیش از ۱۰,۰۰۰ مشتری راضی در سراسر ایران</p>
+              </div>
+
+              <div class="testimonials-grid" id="testimonialsGrid">
+                  <div class="testimonial-card">
+                      <div class="testimonial-card__quote">"</div>
+                      <p class="testimonial-card__text">عطر رو از این سایت خریدم. فوق‌العاده باکیفیت و ماندگاری بی‌نظیر. بسته‌بندی خیلی شیک بود. حتماً دوباره خرید می‌کنم.</p>
+                      <div class="testimonial-card__user">
+                          <div class="user-avatar">S</div>
+                          <div class="user-info">
+                              <h4>سارا احمدی</h4>
+                              <div class="user-rating">★★★★★</div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="testimonial-card">
+                      <div class="testimonial-card__quote">"</div>
+                      <p class="testimonial-card__text">عطر دیور رو گرفتم. اصل بود و قیمت مناسبی داشت. ارسال سریع و بسته‌بندی عالی. ممنون از تیم حرفه‌ایتون.</p>
+                      <div class="testimonial-card__user">
+                          <div class="user-avatar">M</div>
+                          <div class="user-info">
+                              <h4>محمد رضایی</h4>
+                              <div class="user-rating">★★★★★</div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="testimonial-card">
+                      <div class="testimonial-card__quote">"</div>
+                      <p class="testimonial-card__text">خیلی خوشحالم که این سایت رو پیدا کردم. عطرهای اصل با بهترین قیمت. پیشنهاد می‌کنم حتماً امتحان کنید.</p>
+                      <div class="testimonial-card__user">
+                          <div class="user-avatar">N</div>
+                          <div class="user-info">
+                              <h4>نازنین کریمی</h4>
+                              <div class="user-rating">★★★★★</div>
+                          </div>
+                      </div>
+                  </div>
+
+                  
+              </div>
+          </div>
+      </section>
+
+      <!-- ========== NEWSLETTER SECTION ========== -->
+      <section class="newsletter">
+          <div class="newsletter__container">
+              <div class="newsletter__content">
+                  <span class="newsletter__tag">✧ NEWSLETTER ✧</span>
+                  <h2 class="newsletter__title">از <span>تخفیف‌ها</span> باخبر شو</h2>
+                  <p class="newsletter__desc">اولین نفری باش که از جدیدترین عطرها و پیشنهادات ویژه با خبر می‌شوی</p>
+                  
+                  <form class="newsletter__form" id="newsletterForm">
+                      <div class="form-group">
+                          <input type="email" placeholder="ایمیل خود را وارد کنید" required>
+                          <button type="submit">
+                              عضویت
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                              </svg>
+                          </button>
+                      </div>
+                      <p class="form-note">با عضویت، قوانین و حریم خصوصی را می‌پذیرید</p>
+                  </form>
+              </div>
+          </div>
+      </section>
+
+      <!-- ========== FOOTER SECTION ========== -->
+      <footer class="footer">
+          <div class="footer__container">
+              <div class="footer__grid">
+                  <!-- About Column -->
+                  <div class="footer__col">
+                      <div class="footer__logo">
+                          <span class="logo-icon">🪄</span>
+                          <span class="logo-text">LUXE <span>PERFUME</span></span>
+                      </div>
+                      <p class="footer__about">
+                          ارائه‌دهنده لوکس‌ترین عطرهای اصل اروپایی با ضمانت اصالت و بهترین قیمت.
+                      </p>
+                      <div class="footer__social">
+                          <a href="#" class="social-link">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                              </svg>
+                          </a>
+                          <a href="#" class="social-link">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.3 9 4-1-2.7.7-5.6 3.3-6.3 2.6-.8 5.2.6 5.7 3.2.8-.2 1.6-.5 2.3-.9z"/>
+                              </svg>
+                          </a>
+                          <a href="#" class="social-link">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <rect x="2" y="2" width="20" height="20" rx="4"/>
+                                  <circle cx="12" cy="12" r="4"/>
+                                  <path d="M17.5 6.5v.01"/>
+                              </svg>
+                          </a>
+                          <a href="#" class="social-link">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                  <rect x="2" y="9" width="4" height="12"/>
+                                  <circle cx="4" cy="4" r="2"/>
+                              </svg>
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- Quick Links -->
+                  <div class="footer__col">
+                      <h4 class="footer__title">دسترسی سریع</h4>
+                      <ul class="footer__links">
+                          <li><a href="index.html">خانه</a></li>
+                          <li><a href="products.html">محصولات</a></li>
+                          <li><a href="aboutus.html">درباره ما</a></li>
+                          <li><a href="contact.html">تماس با ما</a></li>
+                          <li><a href="#">سوالات متداول</a></li>
+                      </ul>
+                  </div>
+
+                  <!-- Categories -->
+                  <div class="footer__col">
+                      <h4 class="footer__title">دسته‌بندی</h4>
+                      <ul class="footer__links">
+                          <li><a href="#">عطرهای مردانه</a></li>
+                          <li><a href="#">عطرهای زنانه</a></li>
+                          <li><a href="#">عطرهای یونیسکس</a></li>
+                          <li><a href="#">نسخه محدود</a></li>
+                          <li><a href="#">ست هدیه</a></li>
+                      </ul>
+                  </div>
+
+                  <!-- Contact -->
+                  <div class="footer__col">
+                      <h4 class="footer__title">تماس با ما</h4>
+                      <ul class="footer__contact">
+                          <li>
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                  <circle cx="12" cy="10" r="3"/>
+                              </svg>
+                              <span>کابل پل سرخ </span>
+                          </li>
+                          <li>
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                              </svg>
+                              <span dir="ltr">+93 78 807 7685</span>
+                          </li>
+                          <li>
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                  <polyline points="22,6 12,13 2,6"/>
+                              </svg>
+                              <span>info@tawanatechnology.com</span>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="footer__bottom">
+                  <p>© ۲۰۲۶ <strong>Tawana Technology</strong>. تمامی حقوق محفوظ است.</p>
+                  <p style="font-size: 11px; opacity: 0.6;">طراحی و توسعه توسط Tawana Technology</p>
+              </div>
+          </div>
+      </footer>
+ 
+    </main>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
+ <title>درباره ما | LUXE PERFUME</title>
